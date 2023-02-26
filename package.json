@@ -16,6 +16,7 @@
     "@xstate/react": "^3.2.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
+    "framer-motion": "^10.0.0",
     "jotai": "^2.0.2",
     "next": "13.2.1",
     "react": "18.2.0",

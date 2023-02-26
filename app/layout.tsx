@@ -23,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} ${inter.variable}`}>
+      <body
+        className={`bg-white-100 dark:bg-black-100 ${workSans.variable} ${inter.variable}`}
+      >
         {children}
       </body>
     </html>
