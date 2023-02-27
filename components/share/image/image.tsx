@@ -5,7 +5,6 @@ import useImage from "./use-image";
 
 const Image = ({ className, height, src, width, alt }: ImageImpl) => {
   const { error, loading, endLoading, activationError } = useImage();
-  console.log(loading, error);
   return (
     <>
       <div className="w-full h-full flex justify-center items-center">
@@ -15,10 +14,8 @@ const Image = ({ className, height, src, width, alt }: ImageImpl) => {
             <div className="absolute inset-0 z-[100] flex justify-center items-center">
               {loading && !error && (
                 <>
-                  <div className="absolute inset-0 z-[100] bg-white-100/40"></div>
-                  <div>
-                    <ImageLoader />
-                  </div>
+                  <div className="absolute inset-0 z-[100] transparent"></div>
+                  <div><ImageLoader /></div>
                 </>
               )}
               {error && (

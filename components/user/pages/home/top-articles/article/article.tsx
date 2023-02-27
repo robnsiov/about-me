@@ -5,7 +5,6 @@ import ArticleImpl from "./types";
 const Article = ({ date, from, to, href, src, title }: ArticleImpl) => {
   return (
     <>
-      
       <Link
         href={href}
         className="w-full h-full  overflow-hidden relative group"
@@ -23,7 +22,7 @@ const Article = ({ date, from, to, href, src, title }: ArticleImpl) => {
         </div>
         <div className="w-full h-full flex justify-center items-center flex-col relative z-20">
           <div
-            className="absolute inset-0 z-10"
+            className="absolute inset-0 z-10 transition-all duration-300 opacity-60 group-hover:opacity-80"
             style={{
               background: `linear-gradient(to right top, ${from}, ${to})`,
             }}
