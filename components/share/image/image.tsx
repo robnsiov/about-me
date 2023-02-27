@@ -8,7 +8,7 @@ const Image = ({ className, height, src, width, alt }: ImageImpl) => {
   return (
     <>
       <div className="w-full h-full flex justify-center items-center">
-        {(loading || error) && (
+        {/* {(loading || error) && (
           <>
             (
             <div className="absolute inset-0 z-[100] flex justify-center items-center">
@@ -24,7 +24,7 @@ const Image = ({ className, height, src, width, alt }: ImageImpl) => {
             </div>
             )
           </>
-        )}
+        )} */}
         <NextImage
           onLoad={endLoading}
           onError={activationError}
