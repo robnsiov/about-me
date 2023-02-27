@@ -18,16 +18,7 @@ module.exports = {
       sm: { max: "639px" },
     },
     extend: {
-      colors: {
-        white: {
-          DEFAULT: "#fff",
-          100: "#F9FAFB",
-        },
-        black: {
-          DEFAULT: "#000",
-          100: "#18181B",
-        },
-      },
+      colors: {},
     },
   },
   plugins: [],

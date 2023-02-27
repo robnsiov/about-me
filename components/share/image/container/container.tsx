@@ -4,7 +4,7 @@ import ContainerImpl from "./types";
 const Container = ({ children }: ContainerImpl) => {
   return (
     <>
-      <div className="bg-white-100 dark:bg-black-100 relative">
+      <div className="bg-stone-50 dark:bg-zinc-900 relative">
         <span
           className="fixed left-0 top-[calc(50%+100px)] -translate-y-1/2 aspect-square w-80
          rounded-full bg-orange-500 bg-opacity-50 blur-3xl dark:bg-opacity-20"
