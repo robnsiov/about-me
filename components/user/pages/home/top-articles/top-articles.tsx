@@ -5,7 +5,7 @@ import Article from "./article/article";
 const TopArticles = () => {
   return (
     <>
-      <div className="w-full h-screen md:h-auto flex justify-start items-center flex-col ml-4 md:ml-0">
+      <div className="w-full h-screen md:h-auto flex justify-start items-center flex-col md:ml-0">
         <div className="w-full h-1/2 md:h-[250px] flex justify-center items-center bg-blue-300">
           <Article
             title="How to use Image component in Next.js with unknown width and height"

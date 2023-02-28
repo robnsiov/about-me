@@ -4,7 +4,7 @@ import Link from "next/link";
 const AboutMe = () => {
   return (
     <>
-      <div className="w-full flex justify-center items-center px-24 lg:px-8 lg:py-10">
+      <div className="w-full flex justify-center items-center px-4 lg:py-10">
         <div className="max-w-lg h-full flex flex-col justify-center items-center text-center">
           <div className="w-36 h-36 overflow-hidden rounded-full mb-4">
             <Image

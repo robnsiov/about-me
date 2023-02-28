@@ -1,3 +1,4 @@
+"use client";
 import NextImage from "next/image";
 import ImageLoader from "./image-loader/image-loader";
 import ImageImpl from "./types";

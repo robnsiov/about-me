@@ -31,11 +31,13 @@ const Menu = () => {
       >
         <InnerMenu items={items as []} lg={false} />
       </div>
-      <div
-        className="fixed top-1/2 left-0 -translate-y-1/2 flex justify-center items-center flex-col
+      <div className="w-[70px] aspect-square duration-400 transition-all lg:w-0 ">
+        <div
+          className="fixed top-1/2 left-0 -translate-y-1/2 flex justify-center items-center flex-col
          z-50 p-4 space-y-5 duration-400 transition-all lg:-translate-x-8 lg:opacity-0"
-      >
-        <InnerMenu items={items as []} />
+        >
+          <InnerMenu items={items as []} />
+        </div>
       </div>
     </>
   );

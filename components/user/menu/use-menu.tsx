@@ -16,6 +16,10 @@ const useMenu = () => {
     setLocked(!showModal);
     setShowModal(!showModal);
   };
+  const closeModal = () => {
+    setShowModal(false);
+    setLocked(false);
+  };
   const toggleTheme = () => {
     if (localStorage.theme === "dark") {
       setThemeToLight();
@@ -37,7 +41,7 @@ const useMenu = () => {
         activeIcon: <HiHome />,
         title: "Home",
         onclick() {
-          toggleModal();
+          closeModal();
         },
       },
       {
@@ -46,7 +50,7 @@ const useMenu = () => {
         activeIcon: <BsGrid1X2Fill className="text-xl" />,
         title: "Blog",
         onclick() {
-          toggleModal();
+          closeModal();
         },
       },
       {
@@ -55,7 +59,7 @@ const useMenu = () => {
         activeIcon: <MdSchool />,
         title: "About",
         onclick() {
-          toggleModal();
+          closeModal();
         },
       },
       {
