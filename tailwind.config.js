@@ -19,6 +19,15 @@ module.exports = {
     },
     extend: {
       colors: {},
+      container: {
+        center: true,
+      },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        full: "100% 100%",
+      },
     },
   },
   plugins: [],

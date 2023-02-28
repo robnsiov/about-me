@@ -1,3 +1,4 @@
+import Footer from "@/components/user/footer/footer";
 import Menu from "@/components/user/menu/menu";
 import ContainerImpl from "./types";
 
@@ -18,7 +19,10 @@ const Container = ({ children }: ContainerImpl) => {
         rounded-full bg-red-500 bg-opacity-50 blur-3xl dark:bg-opacity-20 sm:bottom[unset] sm:top-full"
         ></span>
         <Menu />
-        <div className="relative z-[10]">{children}</div>
+        <div className="relative z-[10] min-h-screen">
+          {children}
+          <Footer />
+        </div>
       </div>
     </>
   );

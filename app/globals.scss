@@ -19,7 +19,7 @@
       background: #f1f1f1;
     }
     &::-webkit-scrollbar-thumb {
-      background: #18181B;
+      background: #18181b;
       border-radius: 1px;
     }
     &::-webkit-scrollbar-thumb:hover {
@@ -31,6 +31,14 @@
 @layer utilities {
   .break-word {
     word-break: break-word;
+  }
+  .bg-growing-underline {
+    background-size: 100% 8%;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.2s;
   }
 }
 @layer components {
