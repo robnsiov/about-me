@@ -1,0 +1,86 @@
+{
+    "blogs" : 
+    [
+        {   
+            "id": 1,
+            "category": "Article",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnotion-tailwind_-2tyAG4u00c.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646145885877&w=1920&q=75",
+            "color": "blue-500",
+            "link": "/"
+         },
+        {   
+            "id": 2,
+            "category": "Project",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnext-image_0lV_LH8fZ.jpg%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646128125185&w=1920&q=75",
+            "color": "red-500",
+            "link": "/"
+         },
+        {   
+            "id": 3,
+            "category": "Project",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
+            "color": "orange-500",
+            "link": "/"
+         },
+        {   
+            "id": 4,
+            "category": "Project",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnotion-tailwind_-2tyAG4u00c.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646145885877&w=1920&q=75",
+            "color": "blue-500",
+            "link": "/"
+         },
+        {   
+            "id": 5,
+            "category": "Article",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnext-image_0lV_LH8fZ.jpg%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646128125185&w=1920&q=75",
+            "color": "red-500",
+            "link": "/"
+         },
+        {   
+            "id": 6,
+            "category": "Article",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
+            "color": "orange-500",
+            "link": "/"
+         },
+        {   
+            "id": 7,
+            "category": "Project",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnotion-tailwind_-2tyAG4u00c.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646145885877&w=1920&q=75",
+            "color": "blue-500",
+            "link": "/"
+         },
+        {   
+            "id": 8,
+            "category": "Article",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnext-image_0lV_LH8fZ.jpg%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646128125185&w=1920&q=75",
+            "color": "red-500",
+            "link": "/"
+         },
+        {   
+            "id": 9,
+            "category": "Project",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
+            "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
+            "color": "orange-500",
+            "link": "/"
+         }
+    ]
+}
