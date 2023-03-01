@@ -10,7 +10,7 @@ const Footer = () => {
     return (
       <>
         <div
-          className="w-full bg-white/20 px-6 
+          className="w-full bg-white px-6 
       dark:bg-black/20 p-8"
         >
           <div className="max-w-6xl mx-auto flex justify-between items-center md:flex-col relative z-20">
