@@ -6,4 +6,5 @@ export default interface BlogPostImpl {
   shortDesc: string;
   image: string;
   id: string;
+  view: number | null;
 }

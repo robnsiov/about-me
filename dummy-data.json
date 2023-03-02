@@ -1,4 +1,5 @@
 {
+    "views": [1, 2, 3, 4, 5, 6, 7, 8, 9],
     "blogs" : 
     [
         {   
@@ -25,7 +26,7 @@
             "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
             "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
             "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
-            "color": "orange-500",
+            "color": "amber-500",
             "link": "/"
          },
         {   
@@ -52,7 +53,7 @@
             "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
             "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
             "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
-            "color": "orange-500",
+            "color": "amber-500",
             "link": "/"
          },
         {   
@@ -79,7 +80,7 @@
             "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.", 
             "shortDesc" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
             "image": "https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fvestis-ecommerce_4kphyTG_7.png%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646154712969&w=1920&q=75",
-            "color": "orange-500",
+            "color": "amber-500",
             "link": "/"
          }
     ]

@@ -7,7 +7,7 @@ import Button from "./button/button";
 import usePosts from "./use-posts";
 
 const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
-  const { filtered, selected, setSelectedFilter } = usePosts(blogs);
+  const { filtered, selected, setSelectedFilter, views } = usePosts(blogs);
   return (
     <>
       <div className="w-full flex justify-center items-end flex-col relative -top-12 md:-top-8 460px:top-4">
@@ -37,7 +37,10 @@ const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
         <div className="mt-8 grid gap-8 grid-cols-2 sm:grid-cols-1">
           <AnimatePresence>
             {filtered.map(
-              ({ category, color, image, link, shortDesc, title, id }) => (
+              (
+                { category, color, image, link, shortDesc, title, id },
+                index
+              ) => (
                 <motion.div
                   key={id}
                   layout
@@ -53,6 +56,7 @@ const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
                     link={link}
                     shortDesc={shortDesc}
                     title={title}
+                    view={views[index]}
                   />
                 </motion.div>
               )

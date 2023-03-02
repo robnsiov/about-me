@@ -1,6 +1,7 @@
 import Image from "@/components/share/image/image";
 import Link from "next/link";
 import { AiFillEye } from "react-icons/ai";
+import BlogViewCounter from "../blog-view-counter/blog-view-counter";
 import BlogPostImpl from "./types";
 
 const BlogPost = ({
@@ -10,8 +11,8 @@ const BlogPost = ({
   link,
   title,
   category,
+  view,
 }: BlogPostImpl) => {
-  
   return (
     <>
       <Link
@@ -38,9 +39,9 @@ const BlogPost = ({
               {shortDesc}
             </span>
           </div>
-          <div className="flex justify-start items-end text-zinc-900 dark:text-white mt-4">
-            <AiFillEye className="text-2xl" />
-            <span className="ml-2">2,672 views</span>
+          <div className="flex justify-start items-center text-zinc-900 dark:text-white mt-4">
+            <AiFillEye className="text-2xl mr-2" />
+            <BlogViewCounter view={view} />
           </div>
         </div>
         <div className="w-full h-full md:h-1/2">

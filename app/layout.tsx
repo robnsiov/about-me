@@ -1,6 +1,13 @@
 import "./globals.scss";
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+
 import { Work_Sans, Inter } from "next/font/google";
 import Container from "@/components/share/image/container/container";
+import Provider from "@/components/share/provider/provider";
 const workSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-work-sans",
@@ -25,7 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${workSans.variable} ${inter.variable}`}>
-        <Container>{children}</Container>
+        <Provider>
+          <Container>{children}</Container>
+        </Provider>
       </body>
     </html>
   );
