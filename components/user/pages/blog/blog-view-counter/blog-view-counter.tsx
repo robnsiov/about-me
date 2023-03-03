@@ -1,3 +1,4 @@
+"use client";
 import { AnimatePresence, motion, Transition, Variants } from "framer-motion";
 import BlogViewCounterImpl from "./types";
 import useBlogViewConter from "./use-blog-view-counter";
