@@ -15,12 +15,18 @@ const getViews = async (posts: Array<string>) => {
 
 const usePosts = (blogs: Array<BlogPostImpl>) => {
   const [selected, setSelected] = useState("All");
-  const [views, setViews] = useState([]);
+  const [views, setViews] = useState<Array<number>>([]);
 
   const mutation = useMutation({
     mutationFn: getViews,
     onSuccess: (data) => {
       setViews(data);
+    },
+    onError: () => {
+      const def = Array.from({ length: blogs.length }).fill(
+        100
+      ) as Array<number>;
+      setViews(def);
     },
   });
 
