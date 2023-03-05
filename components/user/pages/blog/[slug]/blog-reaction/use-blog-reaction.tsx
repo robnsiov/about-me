@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 type Reaction = "heart" | "sparkles" | "dislike" | "like" | null;
+type ReactionState = number | null;
 
 const useBlogReaction = () => {
   const [reaction, setReaction] = useState<Reaction>("sparkles");
@@ -9,12 +10,11 @@ const useBlogReaction = () => {
     left: "0px",
   });
 
-  const changeReaction = (react: Reaction) => {
-    setReaction((prev) => {
-      if (prev === react) return null;
-      return react;
-    });
-  };
+  const [heart, setHeart] = useState<ReactionState>(null);
+
+  useEffect(() => {
+    setHeart(15);
+  }, []);
 
   useEffect(() => {
     switch (reaction) {
@@ -44,7 +44,13 @@ const useBlogReaction = () => {
         break;
     }
   }, [reaction]);
+  const changeReaction = (react: Reaction) => {
+    setReaction((prev) => {
+      if (prev === react) return null;
+      return react;
+    });
+  };
 
-  return { reaction, changeReaction, highlighted };
+  return { reaction, changeReaction, highlighted, heart };
 };
 export default useBlogReaction;

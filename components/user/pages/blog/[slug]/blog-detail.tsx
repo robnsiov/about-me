@@ -12,7 +12,7 @@ const BlogDetailPage = () => {
       <PageContainer className="items-start justify-start">
         <div className="w-full flex justify-center items-start lg:flex-col lg:items-center">
           <div className="w-full max-w-lg">
-            <h1 className="text-5xl text-center dark:text-white text-zinc-900 font-extrabold">
+            <h1 className="text-5xl text-center dark:text-white text-zinc-900 font-extrabold md:text-4xl">
               How to use Image component in Next.js with unknown width and
               height
             </h1>
@@ -33,7 +33,7 @@ const BlogDetailPage = () => {
           </div>
           <div
             className="min-w-[400px] flex justify-center items-center 
-          flex-col text-center sticky top- right-0 lg:mt-6 lg:min-w-[unset]"
+          flex-col text-center sticky top-[300px] right-0 my-36 lg:mt-6 lg:mb-0 lg:top-0 lg:min-w-[unset]"
           >
             <span className="uppercase dark:text-white text-zinc-900 mb-6">
               reactions

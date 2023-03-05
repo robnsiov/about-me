@@ -2,13 +2,13 @@
 import useBlogReaction from "./use-blog-reaction";
 
 const BlogReaction = () => {
-  const { reaction, changeReaction, highlighted } = useBlogReaction();
+  const { reaction, changeReaction, highlighted, heart } = useBlogReaction();
   return (
     <>
       <div className="relative grid grid-cols-2 gap-3 mb-12">
         <div
           className={`h-16 w-[116px] absolute z-10 
-        transition-all duration-300
+        transition-all duration-[0.4s]
         rounded-full border-4  border-opacity-50
         bg-opacity-30 cursor-pointer ${
           reaction === null ? "opacity-0 invisible" : "opacity-100 visible"
@@ -56,9 +56,13 @@ const BlogReaction = () => {
           >
             ❤️
           </span>
-          <span className="ml-2 text-[19px] dark:text-white text-zinc-900 font-medium">
-            10
-          </span>
+          {heart == null ? (
+            <span className="ml-2 w-4 h-4 bg-zinc-300 animate-ping rounded-full"></span>
+          ) : (
+            <span className="ml-2 text-[19px] dark:text-white text-zinc-900 font-medium">
+              {heart}
+            </span>
+          )}
         </div>
         <div
           onClick={() => changeReaction("like")}
