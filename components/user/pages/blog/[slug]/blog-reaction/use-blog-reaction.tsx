@@ -1,19 +1,39 @@
 import { useState, useEffect } from "react";
 
 type Reaction = "heart" | "sparkles" | "dislike" | "like" | null;
-type ReactionState = number | null;
+interface Rcs {
+  heart: number;
+  sparkles: number;
+  like: number;
+  dislike: number;
+}
+type Reactions = Rcs | null;
 
 const useBlogReaction = () => {
-  const [reaction, setReaction] = useState<Reaction>("sparkles");
+  const [reaction, setReaction] = useState<Reaction>(null);
   const [highlighted, setHighlighted] = useState({
     top: "0px",
     left: "0px",
   });
+  const [showHighlight, setShowHighlight] = useState(false);
 
-  const [heart, setHeart] = useState<ReactionState>(null);
+  const [reactions, setReactions] = useState<Reactions>(null);
+  const [reactionsIndex, setReactionsIndex] = useState<Rcs>({
+    dislike: 1,
+    heart: 1,
+    like: 1,
+    sparkles: 1,
+  });
 
   useEffect(() => {
-    setHeart(15);
+    setReaction("heart");
+    setHighlighted({
+      top: "0px",
+      left: "129px",
+    });
+    setShowHighlight(true);
+    setReactionsIndex((prev) => ({ ...prev, heart: 2 }));
+    setReactions({ dislike: 10, heart: 50, like: 80, sparkles: 7 });
   }, []);
 
   useEffect(() => {
@@ -44,13 +64,40 @@ const useBlogReaction = () => {
         break;
     }
   }, [reaction]);
+
+  const changeReactionIndex = (key: keyof Rcs, type: "inc" | "dec") => {
+    const def = {
+      dislike: 1,
+      heart: 1,
+      like: 1,
+      sparkles: 1,
+    };
+    def[key] = reactionsIndex[key];
+    def[key] = type === "inc" ? def[key] + 1 : def[key] - 1;
+    console.log(def[key], type);
+    setReactionsIndex(def);
+  };
+
   const changeReaction = (react: Reaction) => {
     setReaction((prev) => {
-      if (prev === react) return null;
+      if (prev === react) {
+        changeReactionIndex(react as keyof Rcs, "dec");
+        setShowHighlight(false);
+        return null;
+      }
+      changeReactionIndex(react as keyof Rcs, "inc");
+      setShowHighlight(true);
       return react;
     });
   };
 
-  return { reaction, changeReaction, highlighted, heart };
+  return {
+    reaction,
+    changeReaction,
+    highlighted,
+    reactions,
+    reactionsIndex,
+    showHighlight,
+  };
 };
 export default useBlogReaction;

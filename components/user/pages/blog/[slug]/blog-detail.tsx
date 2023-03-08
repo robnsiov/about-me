@@ -6,6 +6,14 @@ import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
 
+const dummyBody = {
+  __html: `
+  <div class="bg-red-500 p-4">
+    <span class="bg-blue-400">HI</span>
+  </div>
+`,
+};
+
 const BlogDetailPage = () => {
   return (
     <>
@@ -30,7 +38,12 @@ const BlogDetailPage = () => {
               className="w-full h-full object-cover object-center rounded-xl"
               src="https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnext-image_0lV_LH8fZ.jpg%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646128125185&w=1200&q=75"
             />
+            <div
+              className="w-full mt-6"
+              dangerouslySetInnerHTML={dummyBody}
+            ></div>
           </div>
+
           <div
             className="min-w-[400px] flex justify-center items-center 
           flex-col text-center sticky top-[300px] right-0 my-36 lg:mt-6 lg:mb-0 lg:top-0 lg:min-w-[unset]"
