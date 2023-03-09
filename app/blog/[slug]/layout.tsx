@@ -1,10 +1,15 @@
-import Script from "next/script";
-
 const BlogDetailLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       {children}
-      {/* <Script src="https://cdn.tailwindcss.com" /> */}
+      {/* <link
+        rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css"
+      />
+      <script
+        defer
+        src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"
+      /> */}
     </>
   );
 };

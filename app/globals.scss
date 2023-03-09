@@ -12,8 +12,12 @@
 
     // -webkit-tap-highlight-color: transparent;
     // user-select: none;
+  }
+  body,
+  .hljs {
     &::-webkit-scrollbar {
       width: 10px;
+      height: 5px;
     }
     &::-webkit-scrollbar-track {
       background: #f1f1f1;
