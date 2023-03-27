@@ -1,19 +1,10 @@
+import { arts } from "@/api/articles/articles";
 import PageContainer from "../../page-container/page-container";
 import Posts from "./posts/posts";
 
-async function getData() {
-  const res = await fetch("http://localhost:5000/blogs", { cache: "no-store" });
-  if (!res.ok) {
-    return [];
-  }
-
-  return res.json();
-}
-
 const BlogPage = async () => {
-  const blogs = await getData();
-  console.log(blogs);
-
+  const blogs = await arts();
+  
   return (
     <>
       <PageContainer className="items-start flex-col">

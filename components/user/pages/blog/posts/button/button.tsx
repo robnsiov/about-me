@@ -1,7 +1,7 @@
 import cn from "classnames";
 import { motion } from "framer-motion";
 import ButtonImpl from "./types";
-const Button = ({ name, color, isSelected, setState }: ButtonImpl) => {
+const Button = ({ name, color, isSelected, setState, label }: ButtonImpl) => {
   return (
     <button
       className={cn("relative bg-opacity-30 p-4 ")}
@@ -15,7 +15,7 @@ const Button = ({ name, color, isSelected, setState }: ButtonImpl) => {
           !isSelected ? "text-black dark:text-white" : "text-white "
         )}
       >
-        {name}
+        {label}
       </p>
       {isSelected && (
         <motion.div

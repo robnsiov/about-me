@@ -1,9 +1,18 @@
+import { arts } from "@/api/articles/articles";
 import BlogDetailPage from "@/components/user/pages/blog/[slug]/blog-detail";
+import BlogDetailImpl from "./types";
 
-const BlogDetail = () => {
+export async function generateStaticParams() {
+  const res = await arts();
+  return res.map(({ slug }) => ({
+    slug,
+  }));
+}
+
+const BlogDetail = ({ params: { slug } }: BlogDetailImpl) => {
   return (
     <>
-      <BlogDetailPage />
+      <BlogDetailPage slug={slug} />
     </>
   );
 };

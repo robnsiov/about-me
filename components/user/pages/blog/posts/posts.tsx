@@ -1,12 +1,12 @@
 "use client";
 
+import { Articles } from "@/api/types";
 import { AnimatePresence, motion } from "framer-motion";
 import BlogPost from "../blog-post/blog-post";
-import BlogPostImpl from "../blog-post/types";
 import Button from "./button/button";
 import usePosts from "./use-posts";
 
-const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
+const Posts = ({ blogs }: { blogs: Articles }) => {
   const { filtered, selected, setSelectedFilter, views } = usePosts(blogs);
   return (
     <>
@@ -17,32 +17,32 @@ const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
         >
           <Button
             name="All"
+            label="All"
             color="bg-indigo-500"
             isSelected={selected === "All"}
             setState={setSelectedFilter}
           />
           <Button
-            name="Project"
+            name="PR"
+            label="Project"
             color="bg-blue-500"
-            isSelected={selected === "Project"}
+            isSelected={selected === "PR"}
             setState={setSelectedFilter}
           />
           <Button
-            name="Article"
+            name="AR"
+            label="Article"
             color="bg-red-500"
             setState={setSelectedFilter}
-            isSelected={selected === "Article"}
+            isSelected={selected === "AR"}
           />
         </div>
-        <div className="mt-8 grid gap-8 grid-cols-2 sm:grid-cols-1">
+        <div className="w-full mt-8 grid gap-8 grid-cols-2 sm:grid-cols-1">
           <AnimatePresence>
             {filtered.map(
-              (
-                { category, color, image, link, shortDesc, title, id },
-                index
-              ) => (
+              ({ category, to_value, img, slug, short_desc, title }, index) => (
                 <motion.div
-                  key={id}
+                  key={slug}
                   layout
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -50,11 +50,11 @@ const Posts = ({ blogs }: { blogs: Array<BlogPostImpl> }) => {
                 >
                   <BlogPost
                     category={category}
-                    color={color}
-                    image={image}
-                    id={id}
-                    link={link}
-                    shortDesc={shortDesc}
+                    color={to_value}
+                    image={img}
+                    id={slug}
+                    link={`/blog/${slug}`}
+                    shortDesc={short_desc ?? title}
                     title={title}
                     view={views[index]}
                   />

@@ -1,10 +1,14 @@
+import { art } from "@/api/article/article";
 import Image from "@/components/share/image/image";
 import SocialApp from "@/components/user/footer/social-app/social-app";
 import PageContainer from "@/components/user/page-container/page-container";
+import { constants } from "@/constants/constants";
+import { toIntl } from "@/utils/to-intl";
 import { AiFillEye } from "react-icons/ai";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
+import BlogDetailPageImpl from "./types";
 
 const U = () => {
   return (
@@ -35,20 +39,19 @@ const dummyBody = {
 `,
 };
 
-const BlogDetailPage = () => {
-  console.log(U);
+const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
+  const { title, created_at, body, img } = await art(slug);
   return (
     <>
       <PageContainer className="items-start justify-start">
         <div className="w-full flex justify-center items-start lg:flex-col lg:items-center">
           <div className="w-full max-w-lg">
             <h1 className="text-5xl text-center dark:text-white text-zinc-900 font-extrabold md:text-4xl">
-              How to use Image component in Next.js with unknown width and
-              height
+              {title}
             </h1>
             <div className="mt-4 mb-6 text-center flex justify-center items-center flex-wrap text-slate-900 dark:text-white">
               <span className="dark:text-zinc-300 text-zinc-700 mr-4">
-                February 24, 2022
+                {toIntl(created_at)}
               </span>
               <AiFillEye className="text-2xl mr-2" />
               <BlogView id={1} />
@@ -58,11 +61,11 @@ const BlogDetailPage = () => {
               width={800}
               alt="img"
               className="w-full h-full object-cover object-center rounded-xl"
-              src="https://notion-andrew.vercel.app/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fpdtop6wwsgm%2Fnext-image_0lV_LH8fZ.jpg%3Fik-sdk-version%3Djavascript-1.4.3%26updatedAt%3D1646128125185&w=1200&q=75"
+              src={img}
             />
             <div
-              className="w-full mt-6"
-              dangerouslySetInnerHTML={dummyBody}
+              className="w-full mt-6 dark:text-white text-zinc-800"
+              dangerouslySetInnerHTML={{ __html: body }}
             ></div>
           </div>
 
@@ -78,7 +81,9 @@ const BlogDetailPage = () => {
               share posts
             </span>
             <div className="flex justify-center items-center space-x-5">
-              <SocialApp href="/">
+              <SocialApp
+                href={`https://twitter.com/intent/tweet?url=${constants.appURL}/blog/${slug}`}
+              >
                 <BsTwitter className="text-3xl" />
               </SocialApp>
               <SocialApp href="/">
