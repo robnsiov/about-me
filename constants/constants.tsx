@@ -2,6 +2,23 @@ export const constants = {
   appURL: "https://robnsiov.netlify.app",
   baseURL: "https://papers-api.iran.liara.run",
   defaultViews: 100,
+  lnikedIn: "https://test_linkedin",
+  github: "https://test_github",
+  twitter: "https://test_twitter",
+  gamil: "gamil@test",
+  fullName: "MohammadReza Zolfaghari",
+  footer: "© MohammadReza Zolfaghari - 2023",
+  me: "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
+  name: "Mohammad",
+  position: "front-end",
+  attitude:
+    "I love to share my knowledge through code. Check out a few of my most recent",
+  aboutMe:
+    "Hello, Im Mohammad, a self-taught front-end developer, currently living in Iran.",
+  aboutMePicture:
+    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
+  footerLogo:
+    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
   user: {
     articles: () => "/articles",
     topArticles: () => "/articles_top_list",

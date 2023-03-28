@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { FaUikit } from "react-icons/fa";
 import PageContainer from "../../page-container/page-container";
+import { constants } from "@/constants/constants";
 
 const AboutPage = () => {
   return (
@@ -26,8 +27,7 @@ const AboutPage = () => {
             About me
           </h1>
           <span className="my-5 tracking-tighter max-w-sm dark:text-white text-zinc-900">
-            Hello, I{"'"}m Andrew, a self-taught front-end developer, currently
-            living in Cluj-Napoca.
+            {constants.aboutMe}
           </span>
           <h3 className="text-4xl font-bold tracking-tighter dark:text-white text-zinc-900 mt-4 md:text-2xl">
             Mastery
@@ -57,26 +57,26 @@ const AboutPage = () => {
           </h3>
           <div className="flex justify-start items-center mt-6 text-4xl space-x-6">
             <Social
-              href="/"
+              href={constants.twitter}
               className="border-blue-500 text-blue-500 hover:bg-blue-500"
             >
               <AiOutlineTwitter />
             </Social>
             <Social
-              href="/"
+              href={constants.github}
               className="border-red-500 text-red-500 hover:bg-red-500"
             >
               <AiOutlineGithub />
             </Social>
             <Social
-              href="/"
+              href={constants.lnikedIn}
               className="border-amber-500 text-amber-500 hover:bg-amber-500"
             >
               <AiFillLinkedin />
             </Social>
           </div>
           <Link
-            href={"mailto:robnsiov@gmail.com"}
+            href={`mailto:${constants.gamil}`}
             className="mt-10 rounded-full bg-red-500 bg-opacity-30 px-4 py-3 text-zinc-900
               transition-all dark:text-white w-full text-center hover:bg-opacity-50"
           >
@@ -89,11 +89,11 @@ const AboutPage = () => {
               md:rounded-full md:aspect-square md:h-[unset] md:w-1/2 md:mt-10 rounded-lg"
           >
             <Image
-              alt="image"
-              src="https://notion-andrew.vercel.app/_next/image?url=%2Fimages%2Fabout.jpg&w=1920&q=75"
+              alt={constants.fullName}
+              src={constants.aboutMePicture}
               height={680}
               width={370}
-              className="rounded-2xl"
+              className="object-cover object-center rounded-2xl w-full h-full"
             />
           </div>
         </div>

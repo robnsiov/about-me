@@ -59,7 +59,7 @@ const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
             <Image
               height={600}
               width={800}
-              alt="img"
+              alt={title}
               className="w-full h-full object-cover object-center rounded-xl"
               src={img}
             />

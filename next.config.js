@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["notion-andrew.vercel.app", "storage.iran.liara.space"],
+    domains: ["storage.iran.liara.space"],
   },
 };
 
