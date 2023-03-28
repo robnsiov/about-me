@@ -22,7 +22,7 @@ const AboutMe = () => {
             <Link href={"/about"} className="underline text-red-500">
               {constants.name}
             </Link>{" "}
-            a {constants.position} developer.
+            a {constants.position}.
           </h1>
           <div
             className="text-gray-700 dark:text-gray-400  tracking-widest text-lg mt-4 

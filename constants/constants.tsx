@@ -2,6 +2,7 @@ export const constants = {
   appURL: "https://robnsiov.netlify.app",
   baseURL: "https://papers-api.iran.liara.run",
   defaultViews: 100,
+  // Do not touch the above items
   lnikedIn: "https://test_linkedin",
   github: "https://test_github",
   twitter: "https://test_twitter",
@@ -10,7 +11,7 @@ export const constants = {
   footer: "© MohammadReza Zolfaghari - 2023",
   me: "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
   name: "Mohammad",
-  position: "front-end",
+  position: "front-end developer",
   attitude:
     "I love to share my knowledge through code. Check out a few of my most recent",
   aboutMe:
@@ -20,6 +21,7 @@ export const constants = {
   footerLogo:
     "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
   user: {
+    // Do not touch the items below
     articles: () => "/articles",
     topArticles: () => "/articles_top_list",
     article: (slug: string) => `/articles/${slug}`,

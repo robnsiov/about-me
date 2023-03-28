@@ -19,11 +19,6 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata = {
-  title: "AboutMe",
-  description: "MohammadReza Zolfaghari",
-};
-
 export default function RootLayout({
   children,
 }: {
