@@ -4,12 +4,12 @@ import { Articles } from "../types";
 export const topArts = async () => {
   let response: Articles = [];
   try {
-    const res = await fetch(`${constants.baseURL}${constants.user.articles()}`);
+    const res = await fetch(
+      `${constants.baseURL}${constants.user.topArticles()}`
+    );
     if (res.ok) {
-      console.log(`${constants.baseURL}${constants.user.articles()}`);
       const result: Articles = await res.json();
-      response = [...result, ...result, ...result]; // create 3 fake arts
-      // response = result;
+      response = result;
     }
   } catch {
   } finally {

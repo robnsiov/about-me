@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 type Views = Array<number>;
 
 const getViews = async () => {
-  const { data } = await axios<Array<{ view: number }>>({
+  const { data } = await axios<Array<{ number_views: number }>>({
     baseURL: constants.baseURL,
     url: constants.user.articlesDetail(),
   });
@@ -23,11 +23,16 @@ const usePosts = (blogs: Articles) => {
     mutationFn: getViews,
     onSuccess: (data) => {
       const arrayOfViews: Views = [];
-      data.map(({ view }) => arrayOfViews.push(view ?? 100));
+      console.log(data);
+      data.map(({ number_views }) =>
+        arrayOfViews.push(number_views ?? constants.defaultViews)
+      );
       setViews(arrayOfViews);
     },
     onError: () => {
-      const arrayOfViews = Array.from({ length: blogs.length }).fill(100);
+      const arrayOfViews = Array.from({ length: blogs.length }).fill(
+        constants.defaultViews
+      );
       setViews(arrayOfViews as Views);
     },
   });

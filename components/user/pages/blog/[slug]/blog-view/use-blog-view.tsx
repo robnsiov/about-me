@@ -1,24 +1,27 @@
+import { constants } from "@/constants/constants";
+import useArticleDetailStore from "@/stores/article-detail-store";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import BlogViewImpl from "./types";
+import BlogViewImpl, { ArticleDetail } from "./types";
 
-const getViews = async (id: number) => {
-  const { data } = await axios({
+const articleDetail = async (slug: string) => {
+  const { data } = await axios<ArticleDetail>({
     method: "GET",
-    // method: "POST",
-    url: "http://localhost:5000/views",
-    // data: posts,
+    baseURL: constants.baseURL,
+    url: constants.user.articleDetail(slug),
   });
   return data;
 };
 
-const useBlogView = ({ id }: BlogViewImpl) => {
+const useBlogView = ({ slug }: BlogViewImpl) => {
+  const [setArticleDetail] = useArticleDetailStore((state) => [state.set]);
   const [view, setView] = useState<null | number>(null);
   const mutation = useMutation({
-    mutationFn: getViews,
+    mutationFn: (slug: string) => articleDetail(slug),
     onSuccess: (data) => {
-      setView(data[0]);
+      setArticleDetail(data);
+      setView(data.number_views ?? constants.defaultViews);
     },
     onError: () => {
       setView(100);
@@ -26,7 +29,7 @@ const useBlogView = ({ id }: BlogViewImpl) => {
   });
 
   useEffect(() => {
-    mutation.mutate(id as number);
+    mutation.mutate(slug);
   }, []);
   return { view };
 };

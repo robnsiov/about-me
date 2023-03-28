@@ -54,7 +54,7 @@ const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
                 {toIntl(created_at)}
               </span>
               <AiFillEye className="text-2xl mr-2" />
-              <BlogView id={1} />
+              <BlogView slug={slug} />
             </div>
             <Image
               height={600}

@@ -6,11 +6,11 @@ import useBlogView from "./use-blog-view";
 import hljs from "highlight.js/lib/common";
 import "highlight.js/styles/atom-one-dark.css";
 
-const BlogView = ({ id }: BlogViewImpl) => {
+const BlogView = ({ slug }: BlogViewImpl) => {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
-  const { view } = useBlogView({ id });
+  const { view } = useBlogView({ slug });
   return (
     <>
       <BlogViewCounter view={view} />

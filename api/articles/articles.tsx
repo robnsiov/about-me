@@ -8,8 +8,7 @@ export const arts = async () => {
     if (res.ok) {
       console.log(`${constants.baseURL}${constants.user.articles()}`);
       const result: Articles = await res.json();
-      response = [...result, ...result, ...result]; // create 3 fake arts
-      // response = result;
+      response = result;
     }
   } catch {
   } finally {
