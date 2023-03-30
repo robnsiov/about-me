@@ -17,8 +17,8 @@ const Image = ({
   return (
     <>
       <div className="w-full h-full flex justify-center items-center">
-        <ImageLoader size="md" />
-        {/* {loading && <ImageLoader size={size} />}
+        {/* <ImageLoader size="md" /> */}
+        {loading && <ImageLoader size={size} />}
         {error && (
           <NextImage className={className} src={errorImage} alt="404" />
         )}
@@ -31,7 +31,7 @@ const Image = ({
           priority
           width={width}
           height={height}
-        /> */}
+        />
       </div>
     </>
   );
