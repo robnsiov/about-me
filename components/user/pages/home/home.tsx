@@ -6,6 +6,7 @@ const HomePage = () => {
     <>
       <div className="w-full min-h-screen flex justify-center md:flex-col">
         <AboutMe />
+        {/* @ts-expect-error Server Component */}
         <TopArticles />
       </div>
     </>

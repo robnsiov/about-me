@@ -1,9 +1,11 @@
 import { constants } from "@/constants/constants";
-import useArticleDetailStore from "@/stores/article-detail-store";
+import useArticleDetailStore, {
+  ArticleDetail,
+} from "@/stores/article-detail-store";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import BlogViewImpl, { ArticleDetail } from "./types";
+import BlogViewImpl from "./types";
 
 const articleDetail = async (slug: string) => {
   const { data } = await axios<ArticleDetail>({

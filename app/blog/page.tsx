@@ -7,6 +7,7 @@ export function generateMetadata() {
 const Blog = () => {
   return (
     <>
+      {/* @ts-expect-error Server Component */}
       <BlogPage />
     </>
   );

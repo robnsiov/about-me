@@ -22,6 +22,7 @@ export async function generateStaticParams() {
 const BlogDetail = ({ params: { slug } }: BlogDetailImpl) => {
   return (
     <>
+      {/* @ts-expect-error Server Component */}
       <BlogDetailPage slug={slug} />
     </>
   );

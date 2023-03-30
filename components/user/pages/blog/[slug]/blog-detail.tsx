@@ -10,35 +10,6 @@ import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
 import BlogDetailPageImpl from "./types";
 
-const U = () => {
-  return (
-    <>
-      <p>OK</p>
-    </>
-  );
-};
-const dummyBody = {
-  __html: `
-  <div class="rounded-md rounded-b-none mt-3 bg-red-500 text-white
-            flex justify-start items-center p-2
-            ">
-              <div class="w-5 h-5 bg-red-400 rounded-full mr-3"></div>
-              <span class="">/pages/index.tsx</span>
-            </div>
-  <div class="rounded-md rounded-t-none overflow-hidden">
-    <pre><code class="language-javascript">
-    document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((el) => {
-    hljs.highlightElement(el);
-  });
-});
-    </code></pre>
-  </div>
-    
-    <span class="bg-blue-400">HI</span>
-`,
-};
-
 const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
   const { title, created_at, body, img } = await art(slug);
   return (
