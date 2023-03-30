@@ -19,7 +19,7 @@ const articleAction = async (slug: string, action: string) => {
     baseURL: constants.baseURL,
     url: constants.user.actions(slug),
     data: {
-      actions: action,
+      action: action,
     },
   });
   return data;
@@ -139,7 +139,8 @@ const useBlogReaction = () => {
     def[key] = reactionsIndex[key];
     def[key] = type === "inc" ? def[key] + 1 : def[key] - 1;
     setReactionsIndex(def);
-    mutation.mutate({ slug: slug as string, action: key });
+    const actionKey = key == "heart" ? "love" : key;
+    mutation.mutate({ slug: slug as string, action: actionKey });
   };
 
   const changeReaction = (react: Reaction) => {
