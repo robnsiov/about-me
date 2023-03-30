@@ -4,4 +4,5 @@ export default interface ImageImpl {
   width: number;
   height: number;
   alt: string;
+  size?: "md" | "lg";
 }

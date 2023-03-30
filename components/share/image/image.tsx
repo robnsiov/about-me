@@ -5,12 +5,19 @@ import ImageImpl from "./types";
 import useImage from "./use-image";
 import errorImage from "../../../public/images/404.jpg";
 
-const Image = ({ className, height, src, width, alt }: ImageImpl) => {
+const Image = ({
+  className,
+  height,
+  src,
+  width,
+  alt,
+  size = "lg",
+}: ImageImpl) => {
   const { error, loading, endLoading, activationError } = useImage();
   return (
     <>
       <div className="w-full h-full flex justify-center items-center">
-        {loading && <ImageLoader />}
+        {loading && <ImageLoader size={size} />}
         {error && (
           <NextImage className={className} src={errorImage} alt="404" />
         )}

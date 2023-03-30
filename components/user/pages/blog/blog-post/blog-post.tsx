@@ -48,11 +48,12 @@ const BlogPost = ({
             <BlogViewCounter view={view} />
           </div>
         </div>
-        <div className="w-full h-full md:h-1/2">
+        <div className="w-full h-full  md:min-h-[120px] flex justify-center items-center">
           <Image
             src={image}
             height={500}
             width={400}
+            size={"md"}
             alt=""
             className="w-full h-full object-cover object-center"
           />
