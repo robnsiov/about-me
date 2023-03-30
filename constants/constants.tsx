@@ -9,7 +9,7 @@ export const constants = {
   gamil: "gamil@test",
   fullName: "MohammadReza Zolfaghari",
   footer: "© MohammadReza Zolfaghari - 2023",
-  me: "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
+  me: "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_oGHLyyF.png?AWSAccessKeyId=bm7vasqel20us429&Signature=bQExhI%2BEsJaKoaysNpXR%2B5HppNU%3D&Expires=1680189365",
   name: "Mohammad",
   position: "front-end developer",
   attitude:
@@ -17,9 +17,9 @@ export const constants = {
   aboutMe:
     "Hello, Im Mohammad, a self-taught front-end developer, currently living in Iran.",
   aboutMePicture:
-    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
+    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_oGHLyyF.png?AWSAccessKeyId=bm7vasqel20us429&Signature=bQExhI%2BEsJaKoaysNpXR%2B5HppNU%3D&Expires=1680189365",
   footerLogo:
-    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_IeXBMGE.png?AWSAccessKeyId=bm7vasqel20us429&Signature=2Z5hQunvMB3aw3s63tyQKioptiM%3D&Expires=1680037566",
+    "https://storage.iran.liara.space/papers-media/media/article/article_img/notion-tailwind_-2tyAG4u00c_1_oGHLyyF.png?AWSAccessKeyId=bm7vasqel20us429&Signature=bQExhI%2BEsJaKoaysNpXR%2B5HppNU%3D&Expires=1680189365",
   user: {
     // Do not touch the items below
     articles: () => "/articles",
