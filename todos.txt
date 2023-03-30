@@ -2,5 +2,5 @@ Add favicon.ico file in the app/ directory
 Change constants.tsx file
 Write readme.md
 Build api(pages/api/revalidation.tsx) to handle revalidation
-Refactoring
+Refactoring & SEO
 Final test

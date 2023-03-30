@@ -1,9 +1,4 @@
 import "./globals.scss";
-import {
-  Hydrate,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
 
 import { Work_Sans, Inter } from "next/font/google";
 import Container from "@/components/share/image/container/container";
