@@ -31,7 +31,7 @@ const Article = ({
             {toIntl(date)}
           </span>
         </div>
-        <div className="w-full h-full flex justify-center items-center flex-col relative z-20">
+        <div className="w-full h-full flex justify-center items-center flex-col relative z-20  md:aspect-square">
           <div
             className="absolute inset-0 z-10 transition-all duration-300 opacity-60 group-hover:opacity-80"
             style={{
