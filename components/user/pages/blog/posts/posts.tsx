@@ -12,7 +12,7 @@ const Posts = ({ blogs }: { blogs: Articles }) => {
   return (
     <>
       <div className="w-full flex justify-center items-end flex-col relative -top-12 md:-top-8 460px:top-4">
-        <SetVariant variant="none">
+        <SetVariant variant="none" className="w-full">
           <div
             className="inline-flex overflow-hidden rounded-full bg-zinc-200
            bg-opacity-40 backdrop-blur-lg dark:bg-zinc-900 dark:bg-opacity-40"
