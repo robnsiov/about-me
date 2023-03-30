@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["storage.iran.liara.space"],
+    domains: ["storage.iran.liara.space", "robnsiov.storage.iran.liara.space"],
   },
 };
 
