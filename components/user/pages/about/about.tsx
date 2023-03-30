@@ -86,7 +86,7 @@ const AboutPage = () => {
         <div className="ml-52 xl:ml-12 lg:w-full md:ml-0 md:mb-12 flex justify-center items-center">
           <div
             className="w-[370px] h-[680px] overflow-hidden lg:w-full
-              md:rounded-full md:aspect-square md:h-[unset] md:w-1/2 md:mt-10 rounded-lg"
+              md:rounded-full md:aspect-square md:h-[unset] md:w-1/2 rounded-lg"
           >
             <Image
               alt={constants.fullName}

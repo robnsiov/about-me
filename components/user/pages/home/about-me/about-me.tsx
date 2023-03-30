@@ -6,9 +6,9 @@ import Link from "next/link";
 const AboutMe = () => {
   return (
     <>
-      <div className="w-full flex justify-center items-center px-4 lg:py-10">
+      <div className="w-full flex justify-center items-center px-4 lg:pt-20 lg:pb-10 lg:px-8">
         <div className="max-w-lg h-full flex flex-col justify-center items-center text-center">
-          <div className="w-36 h-36 overflow-hidden rounded-full mb-4 relative z-10">
+          <div className="w-36 h-36 overflow-hidden rounded-full mb-4 relative z-10 lg:w-1/2 lg:aspect-square lg:h-[unset]">
             <Image
               src={constants.me}
               alt="me"
