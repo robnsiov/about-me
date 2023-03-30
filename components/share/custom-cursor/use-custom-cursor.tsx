@@ -7,6 +7,7 @@ const useCustomCursor = () => {
   const [cursorVariant] = useCustomCursorStore((state) => [
     state.cursorVariant,
   ]);
+  const [mounted, setMounted] = useState(false);
   const [mousePositon, setMousePosition] = useState({ x: -100, y: -100 });
   const mobile = useMediaQuery("(max-width: 1024px)");
 
@@ -21,6 +22,11 @@ const useCustomCursor = () => {
       document.removeEventListener("mousemove", mouseMoveHandler);
     };
   });
+  useEffect(() => {
+    setTimeout(() => {
+      setMounted(true);
+    }, 500);
+  }, []);
 
   const variantsDot: Variants = {
     default: {
@@ -59,7 +65,7 @@ const useCustomCursor = () => {
       y: mousePositon.y - 8,
     },
   };
-  return { variantsDot, cursorVariant, variantsRing, mobile };
+  return { variantsDot, cursorVariant, variantsRing, mobile, mounted };
 };
 
 export default useCustomCursor;
