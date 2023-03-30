@@ -22,7 +22,7 @@ const AboutPage = () => {
   return (
     <>
       <PageContainer>
-        <div className="min-w-[400px] md:min-w-full flex justify-center items-start flex-col">
+        <div className="min-w-[400px] xl:min-w-[380px] md:min-w-full flex justify-center items-start flex-col">
           <h1 className="text-5xl font-bold tracking-tighter dark:text-white text-zinc-900 md:text-3xl">
             About me
           </h1>
@@ -83,7 +83,7 @@ const AboutPage = () => {
             Contact me
           </Link>
         </div>
-        <div className="ml-52 xl:ml-24 lg:w-full md:ml-0 md:mb-12 flex justify-center items-center">
+        <div className="ml-52 xl:ml-12 lg:w-full md:ml-0 md:mb-12 flex justify-center items-center">
           <div
             className="w-[370px] h-[680px] overflow-hidden lg:w-full
               md:rounded-full md:aspect-square md:h-[unset] md:w-1/2 md:mt-10 rounded-lg"
