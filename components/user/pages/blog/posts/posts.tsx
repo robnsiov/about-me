@@ -47,6 +47,7 @@ const Posts = ({ blogs }: { blogs: Articles }) => {
                 <SetVariant key={slug} variant="none">
                   <motion.div
                     layout
+                    className="w-full"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

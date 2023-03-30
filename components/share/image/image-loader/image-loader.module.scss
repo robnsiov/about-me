@@ -7,9 +7,7 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 33%, #ff3d00 100%);
   animation: rotation 1s linear infinite;
 }
-.loader::after {
-  content: "";
-  box-sizing: border-box;
+.loader-after {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -17,8 +15,8 @@
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background: #263238;
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);

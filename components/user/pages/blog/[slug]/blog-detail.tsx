@@ -27,13 +27,17 @@ const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
               <AiFillEye className="text-2xl mr-2" />
               <BlogView slug={slug} />
             </div>
-            <Image
-              height={600}
-              width={800}
-              alt={title}
-              className="w-full h-full object-cover object-center rounded-xl"
-              src={img}
-            />
+            <div className="w-full flex justify-center items-center">
+              <div className="w-full aspect-video flex justify-center items-center">
+                <Image
+                  height={600}
+                  width={800}
+                  alt={title}
+                  className="w-full h-full object-cover object-center rounded-xl"
+                  src={img}
+                />
+              </div>
+            </div>
             <div
               className="w-full mt-6 dark:text-white text-zinc-800"
               dangerouslySetInnerHTML={{ __html: body }}
