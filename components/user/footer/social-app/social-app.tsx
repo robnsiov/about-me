@@ -5,6 +5,7 @@ const SocialApp = ({ children, href }: SocialAppImpl) => {
   return (
     <>
       <Link
+        aria-label={href}
         href={href}
         target="_blank"
         className="transition-all duration-200 text-gray-600 hover:text-gray-900 dark:text-gray-500 

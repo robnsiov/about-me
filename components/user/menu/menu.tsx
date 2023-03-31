@@ -9,6 +9,7 @@ const Menu = () => {
   return (
     <>
       <button
+        aria-label="menu"
         className="fixed top-0 left-0 z-50 m-6 hidden rounded-full bg-zinc-100 dark:text-zinc-100 p-3 text-2xl
        shadow-lg ring-zinc-400 hover:ring-2
        text-zinc-900 dark:bg-zinc-900 dark:ring-zinc-300 lg:flex"

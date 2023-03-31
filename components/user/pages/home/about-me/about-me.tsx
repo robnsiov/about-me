@@ -20,7 +20,11 @@ const AboutMe = () => {
           <h1 className="relative z-10 font-bold tracking-tighter text-zinc-800 dark:text-white text-5xl md:text-4xl">
             I am,{" "}
             <SetVariant variant="link">
-              <Link href={"/about"} className="underline text-red-500 mr-2">
+              <Link
+                aria-label="about"
+                href={"/about"}
+                className="underline text-red-500 mr-2"
+              >
                 {constants.name}
               </Link>{" "}
             </SetVariant>
@@ -33,6 +37,7 @@ const AboutMe = () => {
             <span>{constants.attitude}</span>
             <SetVariant variant="link">
               <Link
+                aria-label={"/blog"}
                 className="relative z-10 underline text-red-500 md:ml-3"
                 href={"/blog"}
               >

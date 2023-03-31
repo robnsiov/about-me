@@ -76,6 +76,7 @@ const AboutPage = () => {
             </Social>
           </div>
           <Link
+            aria-label={constants.gamil}
             href={`mailto:${constants.gamil}`}
             className="mt-10 rounded-full bg-red-500 bg-opacity-30 px-4 py-3 text-zinc-900
               transition-all dark:text-white w-full text-center hover:bg-opacity-50"

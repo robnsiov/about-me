@@ -11,6 +11,7 @@ const InnerMenu = ({ items, lg = true }: InnerMenuImpl) => {
         ({ href, icon: icon, onclick, title, rounded, activeIcon }) => (
           <SetVariant key={title + href} variant="none">
             <Link
+              aria-label={href}
               href={href}
               onClick={onclick}
               className={`font-normal text-gray-600 dark:text-gray-400 group relative flex h-12 w-12 items-center justify-center

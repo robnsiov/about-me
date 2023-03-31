@@ -15,6 +15,7 @@ const Article = ({
   return (
     <>
       <Link
+        aria-label={title}
         href={href}
         className={`w-full h-full overflow-hidden relative group ${
           lastChild ? "col-span-2" : ""

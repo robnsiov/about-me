@@ -17,6 +17,7 @@ const BlogPost = ({
   return (
     <>
       <Link
+        aria-label={title}
         href={link}
         style={{ borderColor: color }}
         className={`h-[240px] rounded-xl border-2  flex justify-center items-center
