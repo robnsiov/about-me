@@ -1,6 +1,6 @@
+import Image from "@/components/share/image/image";
 import SetVariant from "@/components/share/set-variant/set-variant";
 import { constants } from "@/constants/constants";
-import Image from "next/image";
 import Link from "next/link";
 
 const AboutMe = () => {
@@ -12,7 +12,6 @@ const AboutMe = () => {
             <Image
               src={constants.me}
               alt="me"
-              priority
               width={144}
               height={144}
               className="object-cover object-top w-full h-full"
