@@ -4,9 +4,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.body.secret !== process.env.SECRET) {
-    return res.status(401).json({ message: "Invalid token" });
-  }
+  // if (req.body.secret !== process.env.SECRET) {
+  //   return res.status(401).json({ message: "Invalid token" });
+  // }
 
   const home = res.revalidate("/");
   const blog = res.revalidate("/blog");
