@@ -65,4 +65,18 @@ html {
   .center-absolute {
     @apply left-1/2 -translate-x-1/2;
   }
+
+  
+  .fade-enter {
+    @apply opacity-0;
+  }
+  .fade-enter-active {
+    @apply opacity-100  transition-all duration-300;
+  }
+  .fade-exit {
+    @apply opacity-100;
+  }
+  .fade-exit-active {
+    @apply opacity-0 transition-all duration-300;
+  }
 }

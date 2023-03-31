@@ -16,9 +16,9 @@ const Image = ({
   const { error, loading, endLoading, activationError } = useImage();
   return (
     <>
-      <div className="w-full h-full flex justify-center items-center">
+      <div className="w-full h-full flex justify-center items-center relative">
         {/* <ImageLoader size="md" /> */}
-        {loading && <ImageLoader size={size} />}
+        <ImageLoader inProp={loading} />
         {error && (
           <NextImage className={className} src={errorImage} alt="404" />
         )}

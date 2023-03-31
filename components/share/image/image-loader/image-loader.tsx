@@ -1,19 +1,35 @@
-import classes from "./image-loader.module.scss";
+import { useRef } from "react";
+import { CSSTransition } from "react-transition-group";
 import ImageLoaderImpl from "./types";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
-const ImageLoader = ({ size }: ImageLoaderImpl) => {
+const ImageLoader = ({ inProp }: ImageLoaderImpl) => {
+  const nodeRef = useRef(null);
   return (
     <>
-      <div
-        className={`${classes.loader} ${
-          size === "md" ? "h-[50px] w-[50px]" : "h-[80px] w-[80px]"
-        }`}
-      >
-        <span
-          className={`${classes["loader-after"]} dark:bg-zinc-900 bg-white ${
-            size === "md" ? "h-[45px] w-[45px]" : "h-[75px] w-[75px]"
-          }`}
-        ></span>
+      <div className="absolute inset-0 z-100">
+        <CSSTransition
+          in={inProp}
+          nodeRef={nodeRef}
+          timeout={300}
+          classNames={{
+            enter: "fade-enter",
+            enterActive: "fade-enter-active",
+            exit: "fade-exit",
+            exitActive: "fade-exit-active",
+          }}
+          unmountOnExit
+        >
+          <div ref={nodeRef} className="absolute inset-0">
+            <SkeletonTheme baseColor="#475569" highlightColor="#64748b">
+              <Skeleton
+                className="w-full h-full rounded-none"
+                containerClassName="w-full h-full flex"
+              />
+            </SkeletonTheme>
+          </div>
+        </CSSTransition>
       </div>
     </>
   );
