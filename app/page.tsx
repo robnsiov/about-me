@@ -8,6 +8,8 @@ export function generateMetadata() {
   return { title: `${constants.fullName} - ${position}` };
 }
 
+export const revalidate = 10;
+
 const Home = async () => {
   const articles = await topArts();
   return (
