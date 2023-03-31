@@ -1,9 +1,8 @@
 import { topArts } from "@/api/top-articles/top-articles";
+import { Articles } from "@/api/types";
 import Article from "./article/article";
 
-const TopArticles = async () => {
-  const articles = await topArts();
-
+const TopArticles = async ({ articles }: { articles: Articles }) => {
   return (
     <>
       <div className="grid h-screen w-full grid-cols-2 grid-rows-2 md:ml-0 md:h-[auto] md:max-h-[600px] relative">

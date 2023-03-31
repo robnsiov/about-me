@@ -1,3 +1,4 @@
+import { topArts } from "@/api/top-articles/top-articles";
 import HomePage from "@/components/user/pages/home/home";
 import { constants } from "../constants/constants";
 
@@ -7,10 +8,11 @@ export function generateMetadata() {
   return { title: `${constants.fullName} - ${position}` };
 }
 
-const Home = () => {
+const Home = async () => {
+  const articles = await topArts();
   return (
     <>
-      <HomePage />
+      <HomePage articles={articles} />
     </>
   );
 };
