@@ -48,7 +48,7 @@ const BlogPost = ({
             <BlogViewCounter view={view} />
           </div>
         </div>
-        <div className="w-full h-full  md:aspect-video flex justify-center items-center">
+        <div className="w-full h-full md:h-[unset] overflow-hidden md:aspect-[1.4] flex justify-center items-center">
           <Image
             src={image}
             height={500}
