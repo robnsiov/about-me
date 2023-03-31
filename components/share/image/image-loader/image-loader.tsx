@@ -24,7 +24,8 @@ const ImageLoader = ({ inProp }: ImageLoaderImpl) => {
           <div ref={nodeRef} className="absolute inset-0">
             <SkeletonTheme baseColor="#475569" highlightColor="#64748b">
               <Skeleton
-                className="w-full h-full rounded-none"
+                className="w-full h-full"
+                style={{ borderRadius: "0px" }}
                 containerClassName="w-full h-full flex"
               />
             </SkeletonTheme>
