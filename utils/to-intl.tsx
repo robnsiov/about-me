@@ -1,5 +1,4 @@
 export const toIntl = (date: Date) => {
-  //   console.log(date);
   return new Intl.DateTimeFormat("en-US", {
     month: "long",
     day: "2-digit",

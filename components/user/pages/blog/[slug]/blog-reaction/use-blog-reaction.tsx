@@ -13,7 +13,6 @@ interface Rcs {
 }
 type Reactions = Rcs | null;
 const articleAction = async (slug: string, action: string) => {
-  console.log(constants.user.actions(slug));
   const { data } = await axios({
     method: "POST",
     baseURL: constants.baseURL,

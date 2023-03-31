@@ -23,7 +23,6 @@ const usePosts = (blogs: Articles) => {
     mutationFn: getViews,
     onSuccess: (data) => {
       const arrayOfViews: Views = [];
-      console.log(data);
       data.map(({ number_views }) =>
         arrayOfViews.push(number_views ?? constants.defaultViews)
       );

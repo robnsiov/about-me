@@ -6,7 +6,6 @@ export const arts = async () => {
   try {
     const res = await fetch(`${constants.baseURL}${constants.user.articles()}`);
     if (res.ok) {
-      console.log(`${constants.baseURL}${constants.user.articles()}`);
       const result: Articles = await res.json();
       response = result;
     }
