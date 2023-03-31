@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  &.dark {
+    ::selection {
+      background-color: #334155;
+    }
+  }
+  ::selection {
+    background-color: #334155;
+    color: #fff;
+  }
+}
+
 @layer base {
   ::selection {
-    // @apply bg-one-dark text-white;
+    @apply bg-zinc-800 text-white;
   }
   body {
     min-height: 100vh;
     font-family: var(--font-work-sans), var(--font-inter);
-
-    // -webkit-tap-highlight-color: transparent;
-    // user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
   body,
   .hljs {
