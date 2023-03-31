@@ -13,7 +13,7 @@ const Footer = () => {
       <>
         <div
           className="w-full bg-white px-6 
-      dark:bg-black/20 p-8"
+      dark:bg-zinc-800/20 p-8"
         >
           <div className="max-w-6xl mx-auto flex justify-between items-center md:flex-col relative z-20">
             <div className="flex items-center justify-center sm:flex-col">

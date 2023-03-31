@@ -12,7 +12,7 @@ const Button = ({ name, color, isSelected, setState, label }: ButtonImpl) => {
       <p
         className={cn(
           "relative z-20 font-semibold tracking-widest transition-colors",
-          !isSelected ? "text-black dark:text-white" : "text-white "
+          !isSelected ? "text-zinc-800 dark:text-white" : "text-white "
         )}
       >
         {label}

@@ -51,7 +51,7 @@ const CustomCursor = () => {
           </div>
           <motion.div
             className={cn(
-              "pointer-events-none fixed z-[999] h-4 w-4 rounded-full bg-black transition-colors dark:bg-white opacity-0",
+              "pointer-events-none fixed z-[999] h-4 w-4 rounded-full bg-zinc-800 transition-colors dark:bg-white opacity-0",
               cursorVariant === "none" &&
                 "dark:bg-dark bg-opacity-10  dark:bg-opacity-10",
               mounted && "opacity-100"

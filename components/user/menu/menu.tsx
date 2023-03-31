@@ -17,7 +17,7 @@ const Menu = () => {
         <HiOutlineMenu />
       </button>
       <div
-        className={`fixed inset-0 z-[91] transition-all duration-300 bg-black bg-opacity-30 backdrop-blur-sm
+        className={`fixed inset-0 z-[91] transition-all duration-300 bg-zinc-800 bg-opacity-30 backdrop-blur-sm
         flex justify-start items-center ${
           showModal ? "opacity-100 visible" : "invisible opacity-0"
         }`}

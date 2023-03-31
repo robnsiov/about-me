@@ -18,7 +18,7 @@ const AboutMe = () => {
               className="object-cover object-top w-full h-full"
             />
           </div>
-          <h1 className="relative z-10 font-bold tracking-tighter text-black dark:text-white text-5xl md:text-4xl">
+          <h1 className="relative z-10 font-bold tracking-tighter text-zinc-800 dark:text-white text-5xl md:text-4xl">
             I am,{" "}
             <SetVariant variant="link">
               <Link href={"/about"} className="underline text-red-500 mr-2">
