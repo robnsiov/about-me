@@ -1,7 +1,12 @@
 import Footer from "@/components/user/footer/footer";
 import Menu from "@/components/user/menu/menu";
-import CustomCursor from "../../custom-cursor/custom-cursor";
+import dynamic from "next/dynamic";
 import ContainerImpl from "./types";
+
+const CustomCursor = dynamic(
+  () => import("../../custom-cursor/custom-cursor"),
+  { ssr: false }
+);
 
 const Container = ({ children }: ContainerImpl) => {
   return (
