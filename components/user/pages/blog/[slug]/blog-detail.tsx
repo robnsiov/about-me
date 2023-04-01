@@ -1,11 +1,12 @@
+import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { AiFillEye } from "react-icons/ai";
+
 import { Article } from "@/api/types";
 import Image from "@/components/share/image/image";
 import SocialApp from "@/components/user/footer/social-app/social-app";
 import PageContainer from "@/components/user/page-container/page-container";
 import { constants } from "@/constants/constants";
 import { toIntl } from "@/utils/to-intl";
-import { AiFillEye } from "react-icons/ai";
-import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
 

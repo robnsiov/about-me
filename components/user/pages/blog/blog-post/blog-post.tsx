@@ -1,9 +1,10 @@
-import Image from "@/components/share/image/image";
+import { colord } from "colord";
 import Link from "next/link";
 import { AiFillEye } from "react-icons/ai";
+
+import Image from "@/components/share/image/image";
 import BlogViewCounter from "../blog-view-counter/blog-view-counter";
 import BlogPostImpl from "./types";
-import { colord } from "colord";
 
 const BlogPost = ({
   shortDesc,

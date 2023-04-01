@@ -1,6 +1,7 @@
+import Link from "next/link";
+
 import Image from "@/components/share/image/image";
 import { toIntl } from "@/utils/to-intl";
-import Link from "next/link";
 import ArticleImpl from "./types";
 
 const Article = ({

@@ -1,8 +1,9 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 import { Articles } from "@/api/types";
 import SetVariant from "@/components/share/set-variant/set-variant";
-import { AnimatePresence, motion } from "framer-motion";
 import BlogPost from "../blog-post/blog-post";
 import Button from "./button/button";
 import usePosts from "./use-posts";

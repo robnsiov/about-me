@@ -1,9 +1,11 @@
 "use client";
+
 import { useEffect } from "react";
+import hljs from "highlight.js/lib/common";
+
 import BlogViewCounter from "../../blog-view-counter/blog-view-counter";
 import BlogViewImpl from "./types";
 import useBlogView from "./use-blog-view";
-import hljs from "highlight.js/lib/common";
 import "highlight.js/styles/atom-one-dark.css";
 
 const BlogView = ({ slug }: BlogViewImpl) => {

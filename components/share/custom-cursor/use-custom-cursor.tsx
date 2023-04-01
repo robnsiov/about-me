@@ -1,7 +1,8 @@
-import useCustomCursorStore from "@/stores/custom-cursor-store";
 import { useEffect, useState } from "react";
 import { Variants } from "framer-motion";
 import { useMediaQuery } from "usehooks-ts";
+
+import useCustomCursorStore from "@/stores/custom-cursor-store";
 
 const useCustomCursor = () => {
   const [cursorVariant] = useCustomCursorStore((state) => [

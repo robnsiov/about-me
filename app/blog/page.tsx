@@ -1,6 +1,7 @@
 import { arts } from "@/api/articles/articles";
 import BlogPage from "@/components/user/pages/blog/blog";
 import { constants } from "@/constants/constants";
+
 export function generateMetadata() {
   return { title: `Blog - ${constants.fullName}` };
 }

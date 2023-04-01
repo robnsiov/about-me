@@ -1,6 +1,7 @@
-import SetVariant from "@/components/share/set-variant/set-variant";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+import SetVariant from "@/components/share/set-variant/set-variant";
 import InnerMenuImpl from "./types";
 
 const InnerMenu = ({ items, lg = true }: InnerMenuImpl) => {

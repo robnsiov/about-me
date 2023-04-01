@@ -3,9 +3,10 @@ import { BsGrid1X2Fill, BsGrid1X2 } from "react-icons/bs";
 import { MdSchool, MdOutlineSchool } from "react-icons/md";
 import { FiSun } from "react-icons/fi";
 import { TbMoon } from "react-icons/tb";
-import { useEffect, useLayoutEffect, useState } from "react";
-import { initTheme, setThemeToDark, setThemeToLight } from "@/utils/theme";
+import { useEffect, useState } from "react";
 import { useLockedBody } from "usehooks-ts";
+
+import { initTheme, setThemeToDark, setThemeToLight } from "@/utils/theme";
 
 const useMenu = () => {
   const [theme, setTheme] = useState("dark");

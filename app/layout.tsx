@@ -1,8 +1,10 @@
-import "./globals.scss";
 
 import { Work_Sans, Inter } from "next/font/google";
+
+import "./globals.scss";
 import Container from "@/components/share/image/container/container";
 import Provider from "@/components/share/provider/provider";
+
 const workSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-work-sans",

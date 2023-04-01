@@ -1,5 +1,6 @@
-import { constants } from "@/constants/constants";
 import { notFound } from "next/navigation";
+
+import { constants } from "@/constants/constants";
 import { Article } from "../types";
 
 export const art = async (slug: string) => {

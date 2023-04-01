@@ -1,6 +1,8 @@
 "use client";
+
 import { motion } from "framer-motion";
 import cn from "classnames";
+
 import useCustomCursor from "./use-custom-cursor";
 
 const CustomCursor = () => {

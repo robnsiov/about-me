@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import GrowingLinkImpl from "./types";
 
 const GrowingLink = ({ href, title }: GrowingLinkImpl) => {

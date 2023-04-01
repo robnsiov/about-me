@@ -1,8 +1,9 @@
 "use client";
-import Link from "next/link";
+
 import { HiOutlineMenu } from "react-icons/hi";
 import InnerMenu from "./inner-menu/inner-menu";
 import useMenu from "./use-menu";
+
 const Menu = () => {
   const { items, showModal, toggleModal } = useMenu();
 

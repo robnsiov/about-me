@@ -1,6 +1,7 @@
+import dynamic from "next/dynamic";
+
 import Footer from "@/components/user/footer/footer";
 import Menu from "@/components/user/menu/menu";
-import dynamic from "next/dynamic";
 import ContainerImpl from "./types";
 
 const CustomCursor = dynamic(

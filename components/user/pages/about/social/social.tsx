@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import SocialImpl from "./types";
 
 const Social = ({ children, href, className }: SocialImpl) => {

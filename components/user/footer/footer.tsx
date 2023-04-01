@@ -1,9 +1,11 @@
 "use client";
+
+import { usePathname } from "next/navigation";
+import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+
 import Image from "@/components/share/image/image";
 import GrowingLink from "@/components/share/links/growing-link/growing-link";
 import { constants } from "@/constants/constants";
-import { usePathname } from "next/navigation";
-import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import SocialApp from "./social-app/social-app";
 
 const Footer = () => {

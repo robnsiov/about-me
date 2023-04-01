@@ -1,10 +1,11 @@
+import { useEffect, useState } from "react";
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
+
 import { constants } from "@/constants/constants";
 import useArticleDetailStore, {
   ArticleDetail,
 } from "@/stores/article-detail-store";
-import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import BlogViewImpl from "./types";
 
 const articleDetail = async (slug: string) => {

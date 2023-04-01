@@ -1,7 +1,8 @@
+import { Metadata } from "next";
+
 import { art } from "@/api/article/article";
 import { arts } from "@/api/articles/articles";
 import BlogDetailPage from "@/components/user/pages/blog/[slug]/blog-detail";
-import { Metadata } from "next";
 import BlogDetailImpl from "./types";
 
 export async function generateMetadata({

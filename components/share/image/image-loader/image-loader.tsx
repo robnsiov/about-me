@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { CSSTransition } from "react-transition-group";
-import ImageLoaderImpl from "./types";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+
+import ImageLoaderImpl from "./types";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const ImageLoader = ({ inProp }: ImageLoaderImpl) => {

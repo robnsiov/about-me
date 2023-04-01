@@ -1,9 +1,9 @@
-import { Articles } from "@/api/types";
-import { constants } from "@/constants/constants";
+import { useEffect, useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { type } from "os";
-import { useEffect, useState } from "react";
+
+import { Articles } from "@/api/types";
+import { constants } from "@/constants/constants";
 
 type Views = Array<number>;
 

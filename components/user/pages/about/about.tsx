@@ -1,4 +1,3 @@
-import Image from "@/components/share/image/image";
 import Link from "next/link";
 import {
   AiFillLinkedin,
@@ -6,8 +5,6 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { GrReactjs } from "react-icons/gr";
-import Skill from "./skill/skill";
-import Social from "./social/social";
 import {
   SiMaterialui,
   SiNextdotjs,
@@ -15,8 +12,12 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { FaUikit } from "react-icons/fa";
+
 import PageContainer from "../../page-container/page-container";
 import { constants } from "@/constants/constants";
+import Image from "@/components/share/image/image";
+import Skill from "./skill/skill";
+import Social from "./social/social";
 
 const AboutPage = () => {
   return (
