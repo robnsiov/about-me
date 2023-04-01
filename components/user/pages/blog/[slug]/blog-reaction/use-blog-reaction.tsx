@@ -13,13 +13,13 @@ interface Rcs {
 }
 type Reactions = Rcs | null;
 const articleAction = async (slug: string, action: string) => {
+  const formData = new FormData();
+  formData.append("action", action);
   const { data } = await axios({
     method: "POST",
     baseURL: constants.baseURL,
     url: constants.user.actions(slug),
-    data: {
-      action: action,
-    },
+    data: formData,
   });
   return data;
 };
