@@ -30,12 +30,12 @@ const BlogDetailPage = ({
               <BlogView slug={slug} />
             </div>
             <div className="w-full flex justify-center items-center">
-              <div className="w-full aspect-video flex justify-center items-center">
+              <div className="w-full aspect-video flex justify-center items-center  rounded-xl overflow-hidden">
                 <Image
                   height={600}
                   width={800}
                   alt={title}
-                  className="w-full h-full object-cover object-center rounded-xl"
+                  className="w-full h-full object-cover object-center"
                   src={img}
                 />
               </div>
