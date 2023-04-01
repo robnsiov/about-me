@@ -1,14 +1,15 @@
+import { arts } from "@/api/articles/articles";
 import BlogPage from "@/components/user/pages/blog/blog";
 import { constants } from "@/constants/constants";
 export function generateMetadata() {
   return { title: `Blog - ${constants.fullName}` };
 }
 
-const Blog = () => {
+const Blog = async () => {
+  const blogs = await arts();
   return (
     <>
-      {/* @ts-expect-error Server Component */}
-      <BlogPage />
+      <BlogPage blogs={blogs} />
     </>
   );
 };

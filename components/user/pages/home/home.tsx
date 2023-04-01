@@ -7,7 +7,6 @@ const HomePage = ({ articles }: { articles: Articles }) => {
     <>
       <div className="w-full min-h-screen flex justify-center md:flex-col">
         <AboutMe />
-        {/* @ts-expect-error Server Component */}
         <TopArticles articles={articles} />
       </div>
     </>

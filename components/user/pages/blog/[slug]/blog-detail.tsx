@@ -1,4 +1,4 @@
-import { art } from "@/api/article/article";
+import { Article } from "@/api/types";
 import Image from "@/components/share/image/image";
 import SocialApp from "@/components/user/footer/social-app/social-app";
 import PageContainer from "@/components/user/page-container/page-container";
@@ -8,10 +8,12 @@ import { AiFillEye } from "react-icons/ai";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
-import BlogDetailPageImpl from "./types";
 
-const BlogDetailPage = async ({ slug }: BlogDetailPageImpl) => {
-  const { title, created_at, body, img } = await art(slug);
+const BlogDetailPage = ({
+  article: { title, created_at, body, img, slug },
+}: {
+  article: Article;
+}) => {
   return (
     <>
       <PageContainer className="items-start justify-start">

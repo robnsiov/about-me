@@ -1,10 +1,8 @@
-import { arts } from "@/api/articles/articles";
+import { Articles } from "@/api/types";
 import PageContainer from "../../page-container/page-container";
 import Posts from "./posts/posts";
 
-const BlogPage = async () => {
-  const blogs = await arts();
-
+const BlogPage = ({ blogs }: { blogs: Articles }) => {
   return (
     <>
       <PageContainer className="items-start flex-col">

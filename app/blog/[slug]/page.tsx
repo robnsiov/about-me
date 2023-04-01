@@ -19,11 +19,11 @@ export async function generateStaticParams() {
   }));
 }
 
-const BlogDetail = ({ params: { slug } }: BlogDetailImpl) => {
+const BlogDetail = async ({ params: { slug } }: BlogDetailImpl) => {
+  const article = await art(slug);
   return (
     <>
-      {/* @ts-expect-error Server Component */}
-      <BlogDetailPage slug={slug} />
+      <BlogDetailPage article={article} />
     </>
   );
 };
