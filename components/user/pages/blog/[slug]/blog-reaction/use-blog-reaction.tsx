@@ -93,10 +93,14 @@ const useBlogReaction = () => {
       setShowHighlight(true);
     }
     setReactions({
-      dislike: number_dislikes as number,
-      heart: number_loves as number,
-      like: number_likes as number,
-      sparkles: number_sparkles as number,
+      dislike: is_disliked
+        ? (number_dislikes as number) - 1
+        : (number_dislikes as number),
+      heart: is_loves ? (number_loves as number) - 1 : (number_loves as number),
+      like: is_liked ? (number_likes as number) - 1 : (number_likes as number),
+      sparkles: is_sparkles
+        ? (number_sparkles as number) - 1
+        : (number_sparkles as number),
     });
   }, [articleDetail]);
 
