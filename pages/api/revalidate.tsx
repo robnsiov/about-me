@@ -4,9 +4,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const home = res.revalidate("/");
-  const blog = res.revalidate("/blog");
-  const bySlug = res.revalidate(`/blog/${req.body.slug}`);
+  const home = res.revalidate("/", {unstable_onlyGenerated: true});
+  const blog = res.revalidate("/blog" , {unstable_onlyGenerated: true});
+  const bySlug = res.revalidate(`/blog/${req.body.slug}`. );
   try {
     await Promise.allSettled([home, blog, bySlug]);
     return res.json({ revalidated: true });
