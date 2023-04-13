@@ -22,8 +22,8 @@ const BlogDetailPage = ({
   return (
     <>
       <PageContainer className="items-start justify-start">
-        <div className="w-full flex justify-center items-start lg:flex-col lg:items-center">
-          <div className="w-full max-w-lg">
+        <div className="w-full flex justify-between items-start lg:flex-col lg:items-center">
+          <div className="w-full max-w-2xl">
             <h1 className="text-5xl text-center dark:text-white text-zinc-900 font-extrabold md:text-4xl">
               {title}
             </h1>
