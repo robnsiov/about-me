@@ -24,20 +24,22 @@ html {
     -webkit-tap-highlight-color: transparent;
   }
   body,
-  .hljs {
-    &::-webkit-scrollbar {
-      width: 10px;
-      height: 5px;
-    }
-    &::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #18181ba9;
-      border-radius: 1px;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-      background: #27272a6b;
+  .markdown-body {
+    pre {
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #18181ba9;
+        border-radius: 1px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #27272a6b;
+      }
     }
   }
 }
@@ -66,7 +68,6 @@ html {
     @apply left-1/2 -translate-x-1/2;
   }
 
-  
   .fade-enter {
     @apply opacity-0;
   }

@@ -1,5 +1,7 @@
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { AiFillEye } from "react-icons/ai";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { Article } from "@/api/types";
 import Image from "@/components/share/image/image";
@@ -9,6 +11,8 @@ import { constants } from "@/constants/constants";
 import { toIntl } from "@/utils/to-intl";
 import BlogReaction from "./blog-reaction/blog-reaction";
 import BlogView from "./blog-view/blog-view";
+
+import "./markdown-styles.scss";
 
 const BlogDetailPage = ({
   article: { title, created_at, body, img, slug },
@@ -41,10 +45,20 @@ const BlogDetailPage = ({
                 />
               </div>
             </div>
-            <div
-              className="w-full mt-6 dark:text-white text-zinc-800"
-              dangerouslySetInnerHTML={{ __html: body }}
-            ></div>
+            <div className="w-full mt-6 markdown-body">
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  code: ({ node, ...props }) => (
+                    <div className="rounded p-4 overflow-auto code-body min-w-[400px]">
+                      <code {...props}></code>
+                    </div>
+                  ),
+                }}
+              >
+                {body}
+              </ReactMarkdown>
+            </div>
           </div>
 
           <div
